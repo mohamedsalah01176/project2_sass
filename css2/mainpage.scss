@@ -1,0 +1,13 @@
+@use "./sass/helpers/varibles" as *;
+@use "./sass/helpers/mixin" as *;
+
+@use "./sass/compont/button";
+@use "./sass/compont/heading";
+
+
+// @use "./sass/pages/login";
+@use "./sass/loyerOutt/header";
+@use "./sass/pages/mainpage";
+@use "./global.scss";
+@use "./sass/loyerOutt/grid";
+@use "./sass/loyerOutt/footer";

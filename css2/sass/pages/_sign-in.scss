@@ -1,0 +1,168 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixin" as *;
+
+.sign-in{
+    .container{
+        .boxs{
+            display:flex;
+            flex-direction: row;
+            // justify-content: space-between;
+            align-items: center;
+            gap:50px;
+            // text-align: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            border: 1px solid #ccc;
+            box-shadow: 10px 10px 10px #ccc;
+            // padding:  50px 0;
+            position: relative;
+            overflow: hidden  ;
+            @include breakpoints(small){
+                flex-direction: column;
+            }
+            @include breakpoints(mobile){
+                flex-direction: column;
+            }
+            @include breakpoints(exsmall){
+                flex-direction: column;
+                
+            }
+            .box1{
+                padding-right: 50px;
+                width: 60%;
+                text-align: center;
+                @include breakpoints(small){
+                    width: 80%;
+                }
+                @include breakpoints(mobile){
+                    width: 80%;
+                }
+                @include breakpoints(exsmall){
+                    width: 80%;
+                }
+                h3{
+                    font-family: 'Almarai';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 45px;
+                    padding: 20px;
+                }
+                form{
+                    display: flex;
+                    flex-direction:column;
+                    gap: 10px;
+                    padding: 20px;
+                    input{
+                        width: 100%;
+                        border:none;
+                        border-bottom: 1px solid #ccc;
+                        font-family: 'Almarai';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        padding: 10px;
+                        outline: none;
+                        transition: $transition;
+                        &:hover{
+                            background-color: #f5f5f5;
+                        }
+                    }
+                }
+                .button{
+                    color: $mainColor;
+                    background-color: $background;
+                    padding: 10px 20px;
+                    display: block;
+                    width: fit-content;
+                    margin: 30px auto;
+                    font-family: 'Almarai';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    border-radius: 10px;
+                    transition: $transition;
+                    margin-bottom: 50px;
+                    &:hover{
+                        background-color: $backgroundhover;
+                    }
+                    
+                }
+                p{
+                    font-family: 'Almarai';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color:#777;
+                    
+                    a{
+                        color: rgb(112, 112, 112);
+                        padding: 10px;
+                        transition: $transition;
+                        &:hover{
+                            color: $backgroundhover;
+                        }
+                    }
+                }
+            }
+            
+            .box2{
+                background-color: $background;
+                text-align: center;
+                padding: 250px 250px;
+                margin: 0;
+                border-top-right-radius: 207px 385px;
+                position: relative;
+                @include breakpoints(small){
+                    width: 70%;
+                }
+                @include breakpoints(mobile){
+                    width: 70%;
+                }
+                @include breakpoints(exsmall){
+                    width: 50%;
+                }
+
+            
+                
+                
+                img{
+                    max-width: 100%;
+                    transform: translate(-20%,-60%);
+                    @include breakpoints(small){
+                        transform: none;
+                    }
+                    @include breakpoints(mobile){
+                        transform: none;
+                    }
+                    @include breakpoints(exsmall){
+                        transform: none;
+                    }
+                }
+                
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100px;
+                    height: 93%;
+                    background-color: #fff;
+                    right:-15px;
+                    bottom: 0;
+                    border-bottom-left-radius: 100px;
+                    box-shadow: -6px 12px 11px rgba(192, 192, 192, 0.3490196078);
+                    @include breakpoints(small){
+                        display: none;
+                    }
+                    @include breakpoints(mobile){
+                        display: none;
+                    }
+                    @include breakpoints(exsmall){
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+}
